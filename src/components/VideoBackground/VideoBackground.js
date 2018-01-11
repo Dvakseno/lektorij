@@ -17,21 +17,6 @@ class VideoBackground extends Component {
     this.setState({ play: !this.state.play });
   };
 
-  showPauseButton = () => {
-    const control = document.querySelector('.' + classes.VideoControls);
-    const hidePauseButton = () => {
-      control.classList.add(classes.VideoBackgroundHidden);
-    };
-    let timeout = setTimeout(hidePauseButton, 1000);
-    window.addEventListener('mousemove', () => {
-      clearTimeout(timeout);
-      control.classList.remove('.' + classes.VideoBackgroundHidden);
-      if (this.state.play) {
-        timeout = setTimeout(hidePauseButton, 1000);
-      }
-    });
-  };
-
   hoverControlHandler = status => {
     const control = document.querySelector('.' + classes.VideoControls);
     let button = null;
@@ -43,6 +28,21 @@ class VideoBackground extends Component {
     });
     control.addEventListener('mouseout', () => {
       control.style.backgroundImage = 'url(' + button + ')';
+    });
+  };
+
+  showPauseButton = () => {
+    const control = document.querySelector('.' + classes.VideoControls);
+    const hidePauseButton = () => {
+      control.classList.add(classes.VideoBackgroundHidden);
+    };
+    let timeout = setTimeout(hidePauseButton, 1000);
+    window.addEventListener('mousemove', () => {
+      clearTimeout(timeout);
+      control.classList.remove(classes.VideoBackgroundHidden);
+      if (this.state.play) {
+        timeout = setTimeout(hidePauseButton, 1000);
+      }
     });
   };
 
