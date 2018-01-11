@@ -1,0 +1,24 @@
+.BuyTicketButton {
+  width: 174px;
+  height: 45px;
+  font-family: var(--alergia-black);
+  font-size: 16px;
+  font-weight: 900;
+  background-color: #000;
+  text-decoration: none;
+  color: #fffefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: normal;
+  transition: all 0.1s ease-out;
+  position: absolute;
+  bottom: 25%;
+  left: 30px;
+  transform: translateY(50%);
+}
+.BuyTicketButton:hover {
+  background-color: #fff;
+  color: #000;
+}

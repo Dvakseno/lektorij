@@ -1,0 +1,58 @@
+.VideoBackground {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.VideoBackground:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #808080;
+  z-index: 0;
+}
+.VideoBackground.Main:after {
+  opacity: 0.9;
+}
+.VideoBackground.About:after {
+  opacity: 0.5;
+}
+.VideoBackground.About.Play:after {
+  opacity: 0;
+}
+.VideoBackground video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.VideoControls {
+  height: 40px;
+  width: 40px;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  outline: none;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  padding: 0;
+}
+.VideoBackgroundHidden {
+  opacity: 0;
+  visibility: hidden;
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'alergiaremix';
+  src: url('./alergia_remix-regular-webfont.woff2') format('woff2'),
+    url('./alergia_remix-regular-webfont.woff') format('woff'),
+    url('./alergia_remix-regular-webfont.ttf') format('truetype'),
+    url('./alergia_remix-regular-webfont.svg#alergia_remixregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

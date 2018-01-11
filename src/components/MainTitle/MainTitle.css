@@ -1,0 +1,18 @@
+.Title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+h1 {
+  font-size: 13.75vh;
+  font-weight: 900;
+  font-family: var(--alergia-black);
+  line-height: 0.88;
+  margin-bottom: 30px;
+  cursor: default;
+  transform: translateY(-19px);
+}
+.Subtitle {
+  cursor: default;
+  transform: translateY(-19px);
+}

@@ -1,0 +1,29 @@
+.AboutTop {
+  width: 866px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.AboutTop h2 {
+  font-size: 30px;
+  font-family: var(--alergia-black);
+  height: 70px;
+  line-height: 0.7;
+}
+.Descripton {
+  display: flex;
+}
+.DescriptonItem:first-child {
+  margin-right: 35px;
+}
+.DescriptonItem span {
+  font-family: var(--alergia-black);
+  font-size: 16px;
+  line-height: 1.38;
+  margin-bottom: 10px;
+  display: block;
+}
+.DescriptonItem ul li {
+  font-family: var(--alergia);
+  font-size: 16px;
+  line-height: 1.38;
+}

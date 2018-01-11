@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'alergiaremixblack';
+  src: url('./alergia_remix-black-webfont.woff2') format('woff2'),
+    url('./alergia_remix-black-webfont.woff') format('woff'),
+    url('./alergia_remix-black-webfont.ttf') format('truetype'),
+    url('./alergia_remix-black-webfont.svg#alergia_remixblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

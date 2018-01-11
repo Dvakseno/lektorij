@@ -1,0 +1,33 @@
+.Subscribe {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  width: 100%;
+  font-family: var(--roboto);
+  font-size: 10px;
+}
+.Subscribe div {
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 10px;
+  display: flex;
+}
+.Subscribe a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.3;
+}
+.Subscribe a:hover {
+  opacity: 1;
+}
+.Subscribe ul {
+  margin-left: 798px;
+  margin-right: 70px;
+}
+.Subscribe ul li {
+  display: inline-block;
+}
+.Subscribe ul li:not(:last-child) {
+  margin-right: 10px;
+}

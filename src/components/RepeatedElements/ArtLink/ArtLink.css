@@ -1,0 +1,26 @@
+.ArtLink {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.ImageActive {
+  display: none;
+}
+.ArtLink div {
+  writing-mode: vertical-rl;
+  padding-top: 4px;
+  padding-left: 1px;
+}
+.ArtLink:hover div {
+  color: #fff;
+}
+.ArtLink:hover .Image {
+  display: none;
+}
+.ArtLink:hover .ImageActive {
+  display: block;
+}

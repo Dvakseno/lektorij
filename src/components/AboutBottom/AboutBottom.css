@@ -1,0 +1,29 @@
+.AboutBottom {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+}
+.AboutBottomContainer {
+  width: 866px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.AboutBottomDescription {
+  font-size: 16px;
+  font-family: var(--alergia-black);
+  line-height: 1.38;
+  width: 390px;
+}
+.AboutBottomDescription span {
+  display: block;
+}
+.AboutBottomDescription a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #808080;
+  text-decoration: none;
+}
+.AboutBottomDescription a:hover {
+  color: #000;
+}

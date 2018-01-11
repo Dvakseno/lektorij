@@ -1,0 +1,111 @@
+import React, { Component } from 'react';
+
+import classes from './VideoBackground.css';
+import Aux from '../../hoc/Auxiliary';
+
+import playButton from '../../assets/images/play.png';
+import playButtonHover from '../../assets/images/play_ac.png';
+import pauseButton from '../../assets/images/pause.png';
+import pauseButtonHover from '../../assets/images/pause_ac.png';
+
+class VideoBackground extends Component {
+  state = {
+    play: false
+  };
+
+  playHandler = () => {
+    this.setState({ play: !this.state.play });
+  };
+
+  showPauseButton = () => {
+    const control = document.querySelector('.' + classes.VideoControls);
+    const hidePauseButton = () => {
+      control.classList.add(classes.VideoBackgroundHidden);
+    };
+    let timeout = setTimeout(hidePauseButton, 1000);
+    window.addEventListener('mousemove', () => {
+      clearTimeout(timeout);
+      control.classList.remove('.' + classes.VideoBackgroundHidden);
+      if (this.state.play) {
+        timeout = setTimeout(hidePauseButton, 1000);
+      }
+    });
+  };
+
+  hoverControlHandler = status => {
+    const control = document.querySelector('.' + classes.VideoControls);
+    let button = null;
+    let buttonHover = null;
+    button = status ? playButton : pauseButton;
+    buttonHover = status ? playButtonHover : pauseButtonHover;
+    control.addEventListener('mouseover', () => {
+      control.style.backgroundImage = 'url(' + buttonHover + ')';
+    });
+    control.addEventListener('mouseout', () => {
+      control.style.backgroundImage = 'url(' + button + ')';
+    });
+  };
+
+  componentDidMount() {
+    if (this.props.page === 'About') {
+      this.hoverControlHandler(!this.state.play);
+      this.showPauseButton();
+    }
+  }
+
+  componentWillUpdate() {
+    const bgvideo = document.querySelector('.' + classes.VideoBackground);
+    const video = bgvideo.firstChild;
+    const contentwrapper = document.querySelector('.' + this.props.classNameVisible);
+
+    if (!this.state.play) {
+      video.play();
+      bgvideo.classList.add(classes.Play);
+      contentwrapper.classList.add(this.props.classNameHidden);
+      this.hoverControlHandler(this.state.play);
+    } else {
+      video.pause();
+      bgvideo.classList.remove(classes.Play);
+      contentwrapper.classList.remove(this.props.classNameHidden);
+      this.hoverControlHandler(this.state.play);
+    }
+  }
+
+  render() {
+    const stylesPlay = {
+      backgroundImage: 'url(' + playButton + ')'
+    };
+    const stylePause = {
+      backgroundImage: 'url(' + pauseButton + ')'
+    };
+
+    let styles = this.state.play ? stylePause : stylesPlay;
+
+    let Page = null;
+    let controls = null;
+    if (this.props.page === 'Main') {
+      Page = classes.Main;
+    } else {
+      Page = classes.About;
+      controls = (
+        <button className={classes.VideoControls} style={styles} onClick={this.playHandler} />
+      );
+    }
+
+    return (
+      <Aux>
+        {controls}
+        <div className={[classes.VideoBackground, Page].join(' ')}>
+          <video
+            src={this.props.source}
+            autoPlay={this.props.autoplay}
+            loop={this.props.loop}
+            muted={this.props.muted}
+          />
+        </div>
+      </Aux>
+    );
+  }
+}
+
+export default VideoBackground;

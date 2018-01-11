@@ -1,0 +1,45 @@
+.Navigation {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 60px;
+  z-index: 2;
+}
+.Navigation li {
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+.NavigationItem {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.NavigationItem:before {
+  content: '';
+  height: 1px;
+  width: 30px;
+  opacity: 0.3;
+  display: block;
+  background-color: #fff;
+  transition: width 0.2s ease-in-out;
+}
+.NavigationItemActive:before {
+  width: 60px;
+  background-color: #000;
+  opacity: 1;
+}
+.NavigationItem:hover:before {
+  background-color: #fff;
+  width: 45px;
+  opacity: 1;
+}
+.NavigationItem.NavigationItemActive:hover:before {
+  width: 60px;
+  background-color: #000;
+  cursor: default;
+}
