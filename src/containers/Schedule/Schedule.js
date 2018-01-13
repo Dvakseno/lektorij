@@ -1,5 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const schedule = props => <h1>Schedule</h1>;
+import Aux from '../../hoc/Auxiliary';
+import RepeatsElements from '../../components/RepeatedElements/RepeatsElements';
 
-export default schedule;
+class Schedule extends Component {
+  render() {
+    return (
+      <Aux>
+        <RepeatsElements dark />
+      </Aux>
+    );
+  }
+}
+
+export default Schedule;

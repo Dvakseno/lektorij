@@ -7,6 +7,7 @@ import MainTitle from '../../components/MainTitle/MainTitle';
 import BuyTicketButton from '../../components/BuyTicketButton/BuyTicketButton';
 import DesignLine from '../../components/DesignLine/DesignLine';
 import RepeatsElements from '../../components/RepeatedElements/RepeatsElements';
+import Navigation from '../../components/Navigation/Navigation';
 
 class Lektorij extends Component {
   render() {
@@ -17,6 +18,7 @@ class Lektorij extends Component {
         <BuyTicketButton />
         <DesignLine />
         <RepeatsElements />
+        <Navigation />
       </Aux>
     );
   }

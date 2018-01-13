@@ -5,11 +5,11 @@ import Email from './Email/Email';
 import Subscribe from './Subscribe/Subscribe';
 import Aux from '../../hoc/Auxiliary';
 
-const repeatedElements = () => {
+const repeatedElements = props => {
   return (
     <Aux>
-      <ArtLink />
-      <Subscribe />
+      <ArtLink dark={props.dark} />
+      <Subscribe dark={props.dark} />
       <Email />
     </Aux>
   );

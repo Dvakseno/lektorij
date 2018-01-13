@@ -6,9 +6,9 @@
   cursor: pointer;
   text-decoration: none;
   color: #000;
-}
-.ImageActive {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ArtLink div {
   writing-mode: vertical-rl;
@@ -18,9 +18,13 @@
 .ArtLink:hover div {
   color: #fff;
 }
-.ArtLink:hover .Image {
-  display: none;
+
+.LogoFill {
+  fill: #000;
 }
-.ArtLink:hover .ImageActive {
-  display: block;
+.ArtLink:hover .LogoFill {
+  fill: #fff;
+}
+.ArtLink.ArtLinkDark:hover .LogoFill {
+  fill: rgb(128, 128, 128);
 }

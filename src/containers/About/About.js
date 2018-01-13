@@ -20,7 +20,6 @@ class About extends Component {
           source={video}
           page="About"
           classNameVisible={classes.AboutWrapper}
-          classNameHidden={classes.AboutWrapperHidden}
         />
         <div className={classes.AboutWrapper}>
           <RepeatedElements />

@@ -54,20 +54,22 @@ class VideoBackground extends Component {
   }
 
   componentWillUpdate() {
-    const bgvideo = document.querySelector('.' + classes.VideoBackground);
-    const video = bgvideo.firstChild;
-    const contentwrapper = document.querySelector('.' + this.props.classNameVisible);
+    if (this.props.page === 'About') {
+      const bgvideo = document.querySelector('.' + classes.VideoBackground);
+      const video = bgvideo.firstChild;
+      const contentwrapper = document.querySelector('.' + this.props.classNameVisible);
 
-    if (!this.state.play) {
-      video.play();
-      bgvideo.classList.add(classes.Play);
-      contentwrapper.classList.add(this.props.classNameHidden);
-      this.hoverControlHandler(this.state.play);
-    } else {
-      video.pause();
-      bgvideo.classList.remove(classes.Play);
-      contentwrapper.classList.remove(this.props.classNameHidden);
-      this.hoverControlHandler(this.state.play);
+      if (!this.state.play) {
+        video.play();
+        bgvideo.classList.add(classes.Play);
+        contentwrapper.style.opacity = '0';
+        this.hoverControlHandler(this.state.play);
+      } else {
+        video.pause();
+        bgvideo.classList.remove(classes.Play);
+        contentwrapper.style.opacity = '1';
+        this.hoverControlHandler(this.state.play);
+      }
     }
   }
 

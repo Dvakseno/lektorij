@@ -31,3 +31,7 @@
 .Subscribe ul li:not(:last-child) {
   margin-right: 10px;
 }
+
+.Subscribe.SubscribeDark a {
+  color: #000;
+}

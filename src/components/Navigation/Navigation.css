@@ -43,3 +43,7 @@
   background-color: #000;
   cursor: default;
 }
+
+.Navigation.NavigationDark .NavigationItem:before {
+  background-color: #000;
+}
