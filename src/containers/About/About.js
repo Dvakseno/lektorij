@@ -10,6 +10,9 @@ import AboutBottom from '../../components/AboutBottom/AboutBottom';
 import classes from './About.css';
 
 class About extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
   render() {
     return (
       <Aux>
