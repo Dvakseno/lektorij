@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Aux from '../../hoc/Auxiliary';
-import Navigation from '../../components/Navigation/Navigation';
+// import Navigation from '../../components/Navigation/Navigation';
 
 import About from '../About/About';
 import Lektorij from '../Lektorij/Lektorij';
@@ -12,7 +12,7 @@ class Layout extends Component {
   render() {
     return (
       <Aux>
-        <Navigation />
+        {/* <Navigation /> */}
         <Switch>
           <Route path="/" exact component={Lektorij} />
           <Route path="/about" component={About} />

@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo_lektorij.png';
 
 const logoLektorij = () => {
   const style = {
-    position: 'absolute',
+    position: 'fixed',
     top: '30px',
     left: '30px'
   };

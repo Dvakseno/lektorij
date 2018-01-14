@@ -1,0 +1,41 @@
+.speakersItem {
+  width: 181px;
+  display: inline-block;
+  transition: all 2s ease-in-out;
+  opacity: 1;
+}
+.speakersItem.speakersItemHidden {
+  display: none;
+  opacity: 0;
+}
+.speakersItemImage {
+  width: 181px;
+  height: 181px;
+  margin-bottom: 10px;
+  background-color: #b7b7b7;
+}
+.speakersItemImage img {
+  display: block;
+  width: 100%;
+}
+.speakersItemInfo {
+  min-height: 90px;
+}
+.speakersItemName {
+  font-family: var(--alergia-black);
+  line-height: 1.38;
+}
+.speakersItemCompany,
+.speakersItemPosition {
+  font-family: var(--alergia);
+  line-height: 1.38;
+}
+.speakersItemCompany {
+  text-decoration: none;
+  color: inherit;
+  color: #000;
+  display: inline-block;
+}
+.speakersItemCompany:hover {
+  color: rgb(128, 128, 128);
+}

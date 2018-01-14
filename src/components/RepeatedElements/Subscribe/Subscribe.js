@@ -10,22 +10,22 @@ const subscribe = props => {
       <div>
         <ul>
           <li>
-            <a href="/" target="_blank">
+            <a href="/" rel="noopener noreferrer" target="_blank">
               Facebook
             </a>
           </li>
           <li>
-            <a href="/" target="_blank">
+            <a href="https://www.instagram.com/lektorij/" rel="noopener noreferrer" target="_blank">
               Instagram
             </a>
           </li>
           <li>
-            <a href="/" target="_blank">
+            <a href="/" rel="noopener noreferrer" target="_blank">
               вКонтакте
             </a>
           </li>
         </ul>
-        <a href="/" target="_blank">
+        <a href="/" rel="noopener noreferrer" target="_blank">
           Подписаться
         </a>
       </div>

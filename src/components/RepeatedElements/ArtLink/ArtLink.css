@@ -1,5 +1,5 @@
 .ArtLink {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 30px;
   font-size: 10px;
@@ -10,21 +10,25 @@
   flex-direction: column;
   align-items: center;
 }
-.ArtLink div {
+.ArtLink span {
   writing-mode: vertical-rl;
   padding-top: 4px;
   padding-left: 1px;
+  display: block;
 }
-.ArtLink:hover div {
+.ArtLink:hover span {
   color: #fff;
+}
+.ArtLink.ArtLinkDark:hover span {
+  color: #808080;
 }
 
 .LogoFill {
   fill: #000;
 }
-.ArtLink:hover .LogoFill {
-  fill: #fff;
-}
 .ArtLink.ArtLinkDark:hover .LogoFill {
   fill: rgb(128, 128, 128);
+}
+.ArtLink:hover .LogoFill {
+  fill: #fff;
 }

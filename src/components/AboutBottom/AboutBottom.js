@@ -10,7 +10,7 @@ const aboutBottom = () => (
         <span>
           Разные точки зрения, естественная атмосфера и честные разговоры об успехах и неудачах.
         </span>
-        <a href="/" target="_blank">
+        <a href="http://strelkalektorij.ru/" rel="noopener noreferrer" target="_blank">
           Встреча 2017
         </a>
       </div>

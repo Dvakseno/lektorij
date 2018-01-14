@@ -1,5 +1,5 @@
 .Navigation {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -44,6 +44,6 @@
   cursor: default;
 }
 
-.Navigation.NavigationDark .NavigationItem:before {
+.NavigationDark .NavigationItem:before {
   background-color: #000;
 }

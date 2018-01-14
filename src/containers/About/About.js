@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 import Aux from '../../hoc/Auxiliary';
 import VideoBackground from '../../components/VideoBackground/VideoBackground';
-import video from '../../assets/video/background.mp4';
+import video from '../../assets/video/Lektorij2018.mp4';
 import RepeatedElements from '../../components/RepeatedElements/RepeatsElements';
 import LogoLektorij from '../../components/LogoLektorij/LogoLektorij';
 import AboutTop from '../../components/AboutTop/AboutTop';
 import AboutBottom from '../../components/AboutBottom/AboutBottom';
+import Navigation from '../../components/Navigation/Navigation';
 import classes from './About.css';
 
 class About extends Component {
@@ -29,6 +30,7 @@ class About extends Component {
           <LogoLektorij />
           <AboutTop />
           <AboutBottom />
+          <Navigation />
         </div>
       </Aux>
     );

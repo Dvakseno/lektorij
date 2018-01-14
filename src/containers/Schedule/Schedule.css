@@ -1,0 +1,25 @@
+.Container {
+  width: 866px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.TitleWrapper {
+  position: relative;
+}
+.TitleWrapper h2 {
+  font-size: 30px;
+  font-family: var(--alergia-black);
+  height: 70px;
+  line-height: 0.7;
+}
+.TitleWrapper a {
+  font-family: var(--alergia-black);
+  color: #808080;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.TitleWrapper a:hover {
+  color: #000;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const emailStyle = {
-  position: 'absolute',
+  position: 'fixed',
   right: '30px',
   bottom: '27px',
   fontSize: '10px',
