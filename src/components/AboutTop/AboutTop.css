@@ -11,6 +11,7 @@
 }
 .Descripton {
   display: flex;
+  transform: translateY(-7px);
 }
 .DescriptonItem:first-child {
   margin-right: 35px;

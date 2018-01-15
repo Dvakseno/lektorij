@@ -1,39 +1,39 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 import classes from './Navigation.css';
+import NavigationItem from './NavigationItem/NavigationItem';
 
 const navigation = props => {
-  let navClass = null;
-  navClass = props.dark
-    ? [classes.Navigation, classes.NavigationDark].join(' ')
-    : classes.Navigation;
-  return (
-    <ul className={navClass}>
-      <li>
-        <NavLink
-          to="/"
-          exact
-          activeClassName={classes.NavigationItemActive}
-          className={classes.NavigationItem}
-        />
-      </li>
-      <li>
-        <NavLink
-          to="/about"
-          activeClassName={classes.NavigationItemActive}
-          className={classes.NavigationItem}
-        />
-      </li>
-      <li>
-        <NavLink
-          to="/schedule"
-          activeClassName={classes.NavigationItemActive}
-          className={classes.NavigationItem}
-        />
-      </li>
-    </ul>
-  );
+  const navLinks = [
+    {
+      id: 1,
+      pathname: '/',
+      isExact: true
+    },
+    {
+      id: 2,
+      pathname: '/about',
+      isExact: false
+    },
+    {
+      id: 3,
+      pathname: '/schedule',
+      isExact: false
+    }
+  ];
+
+  const links = navLinks.map(link => {
+    return (
+      <NavigationItem
+        key={link.id}
+        pathname={link.pathname}
+        isExact={link.isExact}
+        dark={props.dark}
+      />
+    );
+  });
+
+  return <ul className={classes.Navigation}>{links}</ul>;
 };
 
 export default navigation;

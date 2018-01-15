@@ -9,14 +9,13 @@
   color: #fffefe;
   display: flex;
   justify-content: center;
-  align-items: center;
   cursor: pointer;
-  letter-spacing: normal;
   transition: all 0.1s ease-out;
   position: absolute;
   bottom: 25%;
   left: 30px;
   transform: translateY(50%);
+  line-height: 40px;
 }
 .BuyTicketButton:hover {
   background-color: #fff;

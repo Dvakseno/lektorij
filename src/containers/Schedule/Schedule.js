@@ -6,6 +6,7 @@ import LogoLektorij from '../../components/LogoLektorij/LogoLektorij';
 import Navigation from '../../components/Navigation/Navigation';
 import classes from './Schedule.css';
 import Speakers from '../../components/Speakers/Speakers';
+import ScheduleContent from '../../components/ScheduleContent/ScheduleContent';
 
 class Schedule extends Component {
   render() {
@@ -17,13 +18,14 @@ class Schedule extends Component {
         <div className={classes.Container}>
           <div className={classes.TitleWrapper}>
             <h2>Выступающие</h2>
-            <a href="/">Все выступающие</a>
+            {/* <a href="/">Все выступающие</a> */}
           </div>
           <Speakers />
           <div className={classes.TitleWrapper}>
             <h2>Программа</h2>
             {/* <a href="/">Скачать pdf</a> */}
           </div>
+          <ScheduleContent />
         </div>
       </Aux>
     );

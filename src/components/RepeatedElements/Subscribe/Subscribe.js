@@ -1,36 +1,58 @@
-import React from 'react';
+import React, { Component } from 'react';
 
+import Aux from '../../../hoc/Auxiliary';
+import Timepad from '../../Timepad/Timepad';
 import classes from './Subscribe.css';
 
-const subscribe = props => {
-  let subDark = null;
-  subDark = props.dark ? [classes.Subscribe, classes.SubscribeDark].join(' ') : classes.Subscribe;
-  return (
-    <div className={subDark}>
-      <div>
-        <ul>
-          <li>
-            <a href="/" rel="noopener noreferrer" target="_blank">
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/lektorij/" rel="noopener noreferrer" target="_blank">
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a href="/" rel="noopener noreferrer" target="_blank">
-              вКонтакте
-            </a>
-          </li>
-        </ul>
-        <a href="/" rel="noopener noreferrer" target="_blank">
-          Подписаться
-        </a>
-      </div>
-    </div>
-  );
-};
+class Subscribe extends Component {
+  state = {
+    showModal: false
+  };
 
-export default subscribe;
+  modalHandler = event => {
+    event.preventDefault();
+    this.setState({ showModal: !this.state.showModal });
+  };
+
+  render() {
+    let subDark = null;
+    subDark = this.props.dark
+      ? [classes.Subscribe, classes.SubscribeDark].join(' ')
+      : classes.Subscribe;
+    return (
+      <Aux>
+        <Timepad showModal={this.state.showModal} />
+        <div className={subDark}>
+          <div>
+            <ul>
+              <li>
+                <a href="/" rel="noopener noreferrer" target="_blank">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/lektorij/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="/" rel="noopener noreferrer" target="_blank">
+                  вКонтакте
+                </a>
+              </li>
+            </ul>
+            <a href="/" rel="noopener noreferrer" target="_blank" onClick={this.modalHandler}>
+              Подписаться
+            </a>
+          </div>
+        </div>
+      </Aux>
+    );
+  }
+}
+
+export default Subscribe;

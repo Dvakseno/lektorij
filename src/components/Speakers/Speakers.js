@@ -10,6 +10,7 @@ import img4 from '../../assets/images/speakers/Arsenov.jpg';
 import img5 from '../../assets/images/speakers/Prokofiev.jpg';
 import img6 from '../../assets/images/speakers/Andronov.jpg';
 import img7 from '../../assets/images/speakers/Motin.jpg';
+import img8 from '../../assets/images/speakers/Bashev.jpg';
 
 class Speakers extends Component {
   render() {
@@ -20,7 +21,7 @@ class Speakers extends Component {
         name: 'Иван Величко',
         company: 'Shuka Design',
         link: 'https://shuka.design/',
-        position: 'Арт - директор'
+        position: 'Арт-директор'
       },
       {
         id: 2,
@@ -44,7 +45,7 @@ class Speakers extends Component {
         name: 'Дмитрий Игошин',
         company: 'AIC',
         link: 'http://www.aic.ru/',
-        position: 'Арт - директор'
+        position: 'Арт-директор'
       },
       {
         id: 5,
@@ -56,7 +57,7 @@ class Speakers extends Component {
       },
       {
         id: 6,
-        image: null,
+        image: img8,
         name: 'Денис Башев',
         company: 'Dilettante',
         link: 'http://dilettant.co/',

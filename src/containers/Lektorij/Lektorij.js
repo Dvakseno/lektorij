@@ -5,7 +5,6 @@ import VideoBackground from '../../components/VideoBackground/VideoBackground';
 import video from '../../assets/video/background.mp4';
 import MainTitle from '../../components/MainTitle/MainTitle';
 import BuyTicketButton from '../../components/BuyTicketButton/BuyTicketButton';
-import DesignLine from '../../components/DesignLine/DesignLine';
 import RepeatsElements from '../../components/RepeatedElements/RepeatsElements';
 import Navigation from '../../components/Navigation/Navigation';
 
@@ -16,7 +15,6 @@ class Lektorij extends Component {
         <VideoBackground autoplay="true" loop="true" muted="true" source={video} page="Main" />
         <MainTitle />
         <BuyTicketButton />
-        <DesignLine />
         <RepeatsElements />
         <Navigation />
       </Aux>
