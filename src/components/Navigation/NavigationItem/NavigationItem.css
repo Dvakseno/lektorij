@@ -1,4 +1,4 @@
-li {
+.NavigationItemWrapper {
   width: 60px;
   display: flex;
   justify-content: flex-end;

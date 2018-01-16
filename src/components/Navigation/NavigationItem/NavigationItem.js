@@ -9,7 +9,7 @@ const navigationItem = props => {
     ? [classes.NavigationItem, classes.NavigationItemDark].join(' ')
     : classes.NavigationItem;
   return (
-    <li>
+    <li className={classes.NavigationItemWrapper}>
       <NavLink
         to={props.pathname}
         exact={props.isExact}

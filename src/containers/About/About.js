@@ -7,7 +7,6 @@ import RepeatedElements from '../../components/RepeatedElements/RepeatsElements'
 import LogoLektorij from '../../components/LogoLektorij/LogoLektorij';
 import AboutTop from '../../components/AboutTop/AboutTop';
 import AboutBottom from '../../components/AboutBottom/AboutBottom';
-import Navigation from '../../components/Navigation/Navigation';
 import classes from './About.css';
 
 class About extends Component {
@@ -30,7 +29,6 @@ class About extends Component {
           <LogoLektorij />
           <AboutTop />
           <AboutBottom />
-          <Navigation />
         </div>
       </Aux>
     );

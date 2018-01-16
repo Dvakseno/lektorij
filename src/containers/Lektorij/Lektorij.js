@@ -6,7 +6,6 @@ import video from '../../assets/video/background.mp4';
 import MainTitle from '../../components/MainTitle/MainTitle';
 import BuyTicketButton from '../../components/BuyTicketButton/BuyTicketButton';
 import RepeatsElements from '../../components/RepeatedElements/RepeatsElements';
-import Navigation from '../../components/Navigation/Navigation';
 
 class Lektorij extends Component {
   render() {
@@ -16,7 +15,6 @@ class Lektorij extends Component {
         <MainTitle />
         <BuyTicketButton />
         <RepeatsElements />
-        <Navigation />
       </Aux>
     );
   }
