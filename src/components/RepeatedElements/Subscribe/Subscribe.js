@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import Aux from '../../../hoc/Auxiliary';
-import Timepad from '../../Timepad/Timepad';
+// import Timepad from '../../Timepad/Timepad';
 import classes from './Subscribe.css';
+// import Backdrop from '../../Backdrop/Backdrop';
 
 class Subscribe extends Component {
   state = {
@@ -21,7 +22,8 @@ class Subscribe extends Component {
       : classes.Subscribe;
     return (
       <Aux>
-        <Timepad showModal={this.state.showModal} />
+        {/* <Timepad showModal={this.state.showModal} /> */}
+        {/* <Backdrop showBackdrop={this.state.showModal} onClick={this.test} /> */}
         <div className={subDark}>
           <div>
             <ul>

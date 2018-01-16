@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Aux from '../../hoc/Auxiliary';
 import RepeatsElements from '../../components/RepeatedElements/RepeatsElements';
 import LogoLektorij from '../../components/LogoLektorij/LogoLektorij';
-import Navigation from '../../components/Navigation/Navigation';
 import classes from './Schedule.css';
 import Speakers from '../../components/Speakers/Speakers';
 import ScheduleContent from '../../components/ScheduleContent/ScheduleContent';
@@ -14,7 +13,6 @@ class Schedule extends Component {
       <Aux>
         <LogoLektorij />
         <RepeatsElements dark />
-        <Navigation dark />
         <div className={classes.Container}>
           <div className={classes.TitleWrapper}>
             <h2>Выступающие</h2>
