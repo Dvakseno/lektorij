@@ -51,7 +51,30 @@ class VideoBackground extends Component {
       this.hoverControlHandler(!this.state.play);
       this.showPauseButton();
     }
+    this.videoSize();
+    this.resizeWindowHandler();
   }
+
+  videoSize = () => {
+    const video = document.querySelector('.' + classes.VideoBackground + ' video');
+    video.style.width = window.innerWidth + 'px';
+    if (video.offsetHeight < window.innerHeight) {
+      video.style.width = '';
+      video.style.height = window.innerHeight + 'px';
+    }
+  };
+
+  resizeWindowHandler = () => {
+    window.addEventListener('resize', () => {
+      const video = document.querySelector('.' + classes.VideoBackground + ' video');
+      video.style.height = '';
+      video.style.width = window.innerWidth + 'px';
+      if (video.offsetHeight < window.innerHeight) {
+        video.style.width = '';
+        video.style.height = window.innerHeight + 'px';
+      }
+    });
+  };
 
   componentWillUpdate() {
     if (this.props.page === 'About') {

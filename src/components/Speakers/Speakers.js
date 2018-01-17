@@ -74,9 +74,9 @@ class Speakers extends Component {
       {
         id: 8,
         image: null,
-        name: 'Спикер уточняется',
-        company: null,
-        link: '/',
+        name: 'Борис Бендиков',
+        company: 'Фотограф',
+        link: 'http://bendikov.ru/',
         position: null
       },
       {
