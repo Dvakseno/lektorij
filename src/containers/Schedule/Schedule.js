@@ -8,7 +8,24 @@ import Speakers from '../../components/Speakers/Speakers';
 import ScheduleContent from '../../components/ScheduleContent/ScheduleContent';
 
 class Schedule extends Component {
+  componentWillUnmount() {
+    console.log('[Schedule Unmount] ');
+  }
+  // onWheelHandler = e => {
+  //   let delta = e.deltaY || e.detail || e.wheelDelta;
+
+  //   if (this.props.location.pathname === '/schedule') {
+  //     if (delta < 0 && window.pageYOffset === 0) {
+  //       console.log('schedule -> about');
+  //       this.props.history.replace('/about');
+  //     }
+  //   }
+  // };
+  // switchToAnotherPage = () => {
+  //   window.addEventListener('wheel', e => this.onWheelHandler(e), { passive: true });
+  // };
   render() {
+    // this.switchToAnotherPage();
     return (
       <Aux>
         <LogoLektorij />

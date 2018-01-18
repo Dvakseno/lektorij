@@ -13,6 +13,9 @@ class About extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return false;
   }
+  componentWillUnmount() {
+    console.log('[About Unmount] ');
+  }
   render() {
     return (
       <Aux>

@@ -8,6 +8,9 @@ import BuyTicketButton from '../../components/BuyTicketButton/BuyTicketButton';
 import RepeatsElements from '../../components/RepeatedElements/RepeatsElements';
 
 class Lektorij extends Component {
+  componentWillUnmount() {
+    console.log('[Main Unmount] ');
+  }
   render() {
     return (
       <Aux>

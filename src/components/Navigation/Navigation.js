@@ -30,6 +30,13 @@ class Navigation extends Component {
   //     }
   //   }
   // };
+  // switchToAnotherPage = () => {
+  //   window.addEventListener('wheel', e => this.onWheelHandler(e), { passive: true });
+  // };
+
+  componentWillUnmount() {
+    console.log('[Navigation Unmount] ');
+  }
 
   render() {
     const navLinks = [
