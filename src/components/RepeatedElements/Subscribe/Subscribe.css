@@ -17,6 +17,7 @@
   color: #fff;
   text-decoration: none;
   opacity: 0.3;
+  z-index: 1;
 }
 .Subscribe a:hover {
   opacity: 1;

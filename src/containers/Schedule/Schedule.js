@@ -8,39 +8,33 @@ import Speakers from '../../components/Speakers/Speakers';
 import ScheduleContent from '../../components/ScheduleContent/ScheduleContent';
 
 class Schedule extends Component {
-  componentWillUnmount() {
-    console.log('[Schedule Unmount] ');
-  }
-  // onWheelHandler = e => {
-  //   let delta = e.deltaY || e.detail || e.wheelDelta;
-
-  //   if (this.props.location.pathname === '/schedule') {
-  //     if (delta < 0 && window.pageYOffset === 0) {
-  //       console.log('schedule -> about');
-  //       this.props.history.replace('/about');
-  //     }
-  //   }
-  // };
-  // switchToAnotherPage = () => {
-  //   window.addEventListener('wheel', e => this.onWheelHandler(e), { passive: true });
-  // };
+  wheelHandler = e => {
+    let delta = e.deltaY;
+    if (this.props.location.pathname === '/schedule') {
+      if (delta < 0 && window.pageYOffset === 0) {
+        this.props.history.replace('/about');
+        console.log('schedule -> about');
+      }
+    }
+  };
   render() {
-    // this.switchToAnotherPage();
     return (
       <Aux>
         <LogoLektorij />
         <RepeatsElements dark />
-        <div className={classes.Container}>
-          <div className={classes.TitleWrapper}>
-            <h2>Выступающие</h2>
-            {/* <a href="/">Все выступающие</a> */}
+        <div onWheel={this.wheelHandler} style={{ width: '100vw' }}>
+          <div className={classes.Container}>
+            <div className={classes.TitleWrapper}>
+              <h2>Выступающие</h2>
+              {/* <a href="/">Все выступающие</a> */}
+            </div>
+            <Speakers />
+            <div className={classes.TitleWrapper}>
+              <h2>Программа</h2>
+              {/* <a href="/">Скачать pdf</a> */}
+            </div>
+            <ScheduleContent />
           </div>
-          <Speakers />
-          <div className={classes.TitleWrapper}>
-            <h2>Программа</h2>
-            {/* <a href="/">Скачать pdf</a> */}
-          </div>
-          <ScheduleContent />
         </div>
       </Aux>
     );

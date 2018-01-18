@@ -13,9 +13,25 @@ class About extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return false;
   }
-  componentWillUnmount() {
-    console.log('[About Unmount] ');
-  }
+  wheelHandler = e => {
+    let delta = e.deltaY;
+    console.log(delta);
+    if (this.props.location.pathname === '/about') {
+      if (delta > 0) {
+        this.props.history.replace('/schedule');
+        console.log('about -> schedule');
+      } else {
+        this.props.history.replace('/');
+        console.log('about -> main');
+      }
+    }
+    if (this.props.location.pathname === '/') {
+      if (delta > 0) {
+        this.props.history.replace('/about');
+        console.log('main -> about');
+      }
+    }
+  };
   render() {
     return (
       <Aux>
@@ -27,7 +43,7 @@ class About extends Component {
           page="About"
           classNameVisible={classes.AboutWrapper}
         />
-        <div className={classes.AboutWrapper}>
+        <div className={classes.AboutWrapper} onWheel={this.wheelHandler}>
           <RepeatedElements />
           <LogoLektorij />
           <AboutTop />
