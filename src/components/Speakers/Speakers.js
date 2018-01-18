@@ -19,6 +19,7 @@ class Speakers extends Component {
         id: 1,
         image: img1,
         name: 'Иван Величко',
+        fb: 'https://www.facebook.com/velichko',
         company: 'Shuka Design',
         link: 'https://shuka.design/',
         position: 'Арт-директор'
@@ -27,6 +28,7 @@ class Speakers extends Component {
         id: 2,
         image: null,
         name: 'Юрко Гуцуляк',
+        fb: 'https://www.facebook.com/yurko.gutsulyak',
         company: 'Студия графического дизайна Юрка Гуцуляка',
         link: 'http://gstudio.com.ua/',
         position: null
@@ -35,14 +37,16 @@ class Speakers extends Component {
         id: 3,
         image: img2,
         name: 'Евгений Драпико',
+        fb: 'https://www.facebook.com/evgeny.drapiko',
         company: 'Fusion Centre',
-        link: '/',
+        link: null,
         position: 'Зам. директора'
       },
       {
         id: 4,
         image: img3,
         name: 'Дмитрий Игошин',
+        fb: 'https://www.facebook.com/d.igoshin',
         company: 'AIC',
         link: 'http://www.aic.ru/',
         position: 'Арт-директор'
@@ -51,6 +55,7 @@ class Speakers extends Component {
         id: 5,
         image: img4,
         name: 'Артур Арсёнов',
+        fb: 'https://www.facebook.com/loooi',
         company: 'Looi Factory',
         link: 'https://looi.ru/',
         position: 'Президент'
@@ -59,6 +64,7 @@ class Speakers extends Component {
         id: 6,
         image: img8,
         name: 'Денис Башев',
+        fb: 'https://www.facebook.com/didierbashev',
         company: 'Dilettante',
         link: 'http://dilettant.co/',
         position: 'Графический дизайнер'
@@ -67,6 +73,7 @@ class Speakers extends Component {
         id: 7,
         image: img5,
         name: 'Сергей Прокофьев',
+        fb: 'https://www.facebook.com/prokman',
         company: 'CreativePeople',
         link: 'https://cpeople.ru/',
         position: 'Управляющий партнёр'
@@ -75,6 +82,7 @@ class Speakers extends Component {
         id: 8,
         image: null,
         name: 'Борис Бендиков',
+        fb: 'https://www.facebook.com/boris.bendikov.1',
         company: 'Фотограф',
         link: 'http://bendikov.ru/',
         position: null
@@ -83,6 +91,7 @@ class Speakers extends Component {
         id: 9,
         image: img6,
         name: 'Сергей Андронов',
+        fb: 'https://www.facebook.com/andronovsergey',
         company: 'Looi Factory',
         link: 'https://looi.ru/',
         position: 'Дизайн-директор'
@@ -91,6 +100,7 @@ class Speakers extends Component {
         id: 10,
         image: null,
         name: 'Спикер уточняется',
+        fb: null,
         company: null,
         link: '/',
         position: null
@@ -99,6 +109,7 @@ class Speakers extends Component {
         id: 11,
         image: null,
         name: 'Спикер уточняется',
+        fb: null,
         company: null,
         link: '/',
         position: null
@@ -107,6 +118,7 @@ class Speakers extends Component {
         id: 12,
         image: null,
         name: 'Спикер уточняется',
+        fb: null,
         company: null,
         link: '/',
         position: null
@@ -115,6 +127,7 @@ class Speakers extends Component {
         id: 13,
         image: img7,
         name: 'Александр Мотин',
+        fb: 'https://www.facebook.com/aleksandr.a.motin?ref=br_rs',
         company: 'Braind',
         link: 'http://braind.agency/',
         position: 'Креативный директор'
@@ -129,6 +142,7 @@ class Speakers extends Component {
           company={speaker.company}
           href={speaker.link}
           position={speaker.position}
+          fb={speaker.fb}
         />
       );
     });

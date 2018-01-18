@@ -15,20 +15,11 @@ class About extends Component {
   }
   wheelHandler = e => {
     let delta = e.deltaY;
-    console.log(delta);
     if (this.props.location.pathname === '/about') {
       if (delta > 0) {
         this.props.history.replace('/schedule');
-        console.log('about -> schedule');
       } else {
         this.props.history.replace('/');
-        console.log('about -> main');
-      }
-    }
-    if (this.props.location.pathname === '/') {
-      if (delta > 0) {
-        this.props.history.replace('/about');
-        console.log('main -> about');
       }
     }
   };

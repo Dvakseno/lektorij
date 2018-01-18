@@ -13,7 +13,6 @@ class Schedule extends Component {
     if (this.props.location.pathname === '/schedule') {
       if (delta < 0 && window.pageYOffset === 0) {
         this.props.history.replace('/about');
-        console.log('schedule -> about');
       }
     }
   };

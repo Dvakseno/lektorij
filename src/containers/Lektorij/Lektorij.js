@@ -9,11 +9,9 @@ import RepeatsElements from '../../components/RepeatedElements/RepeatsElements';
 class Lektorij extends Component {
   wheelHandler = e => {
     let delta = e.deltaY;
-    console.log(delta);
     if (this.props.location.pathname === '/') {
       if (delta > 0) {
         this.props.history.replace('/about');
-        console.log('main -> about');
       }
     }
   };

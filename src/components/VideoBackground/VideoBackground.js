@@ -51,8 +51,10 @@ class VideoBackground extends Component {
       this.hoverControlHandler(!this.state.play);
       this.showPauseButton();
     }
-    this.videoSize();
-    this.resizeWindowHandler();
+    if (this.props.page === 'About' && this.props.page === '/') {
+      this.videoSize();
+      this.resizeWindowHandler();
+    }
   }
 
   videoSize = () => {

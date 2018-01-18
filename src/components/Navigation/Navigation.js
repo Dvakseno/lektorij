@@ -5,10 +5,6 @@ import classes from './Navigation.css';
 import NavigationItem from './NavigationItem/NavigationItem';
 
 class Navigation extends Component {
-  componentWillUnmount() {
-    console.log('[Navigation Unmount] ');
-  }
-
   render() {
     const navLinks = [
       {
