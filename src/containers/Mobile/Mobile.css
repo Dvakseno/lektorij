@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.Title {
+  font-family: var(--alergia-black);
+  font-size: 60px;
+  line-height: 0.88;
+  transform: translateY(-9px);
+}
+.Subtitle {
+  margin-top: 20px;
+}
+
+.Social {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+.Social li {
+  display: inline-block;
+}
+.Social a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+}
+
+.RegButton {
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--alergia-black);
+  width: 157px;
+  height: 45px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  right: 30px;
+  bottom: 25%;
+  transform: translateY(50%);
+}

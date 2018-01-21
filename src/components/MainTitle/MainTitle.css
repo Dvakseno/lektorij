@@ -3,7 +3,7 @@
   top: 30px;
   left: 30px;
 }
-h1 {
+.Title h1 {
   font-size: 13.75vh;
   font-weight: 900;
   font-family: var(--alergia-black);

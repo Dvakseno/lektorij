@@ -99,11 +99,11 @@ class Speakers extends Component {
       {
         id: 10,
         image: null,
-        name: 'Спикер уточняется',
-        fb: null,
+        name: 'Гоша Евдокимов',
+        fb: 'https://www.facebook.com/EvdokimovGosha',
         company: null,
-        link: '/',
-        position: null
+        link: null,
+        position: 'Креативный директор'
       },
       {
         id: 11,
