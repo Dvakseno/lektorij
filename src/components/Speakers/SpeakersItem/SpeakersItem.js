@@ -6,7 +6,12 @@ const speakersItem = props => {
   let image = null;
   if (props.img && props.fb) {
     image = (
-      <a href={props.fb} className={classes.speakersItemImage}>
+      <a
+        href={props.fb}
+        className={classes.speakersItemImage}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={props.img} alt="" />
       </a>
     );
@@ -43,8 +48,8 @@ const speakersItem = props => {
       {image}
       <div className={classes.speakersItemInfo}>
         <div className={classes.speakersItemName}>{props.name}</div>
-        {link}
         {position}
+        {link}
       </div>
     </div>
   );

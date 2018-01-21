@@ -11,6 +11,7 @@ import img5 from '../../assets/images/speakers/Prokofiev.jpg';
 import img6 from '../../assets/images/speakers/Andronov.jpg';
 import img7 from '../../assets/images/speakers/Motin.jpg';
 import img8 from '../../assets/images/speakers/Bashev.jpg';
+import img9 from '../../assets/images/speakers/Evdokimov.jpg';
 
 class Speakers extends Component {
   render() {
@@ -40,7 +41,7 @@ class Speakers extends Component {
         fb: 'https://www.facebook.com/evgeny.drapiko',
         company: 'Fusion Centre',
         link: null,
-        position: 'Зам. директора'
+        position: 'Зам. директора по науке'
       },
       {
         id: 4,
@@ -98,12 +99,12 @@ class Speakers extends Component {
       },
       {
         id: 10,
-        image: null,
+        image: img9,
         name: 'Гоша Евдокимов',
         fb: 'https://www.facebook.com/EvdokimovGosha',
         company: null,
         link: null,
-        position: 'Креативный директор'
+        position: 'Независимый спикер'
       },
       {
         id: 11,

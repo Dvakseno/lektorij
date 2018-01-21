@@ -12,13 +12,19 @@ const mobile = () => {
       <div className={classes.Social}>
         <ul>
           <li>
-            <a href="/">Facebook</a>
+            <a href="/" rel="noopener noreferrer" target="_blank">
+              Facebook
+            </a>
           </li>
           <li>
-            <a href="/">Instagram</a>
+            <a href="https://www.instagram.com/lektorij/" rel="noopener noreferrer" target="_blank">
+              Instagram
+            </a>
           </li>
           <li>
-            <a href="/">вКонтакте</a>
+            <a href="/" rel="noopener noreferrer" target="_blank">
+              вКонтакте
+            </a>
           </li>
         </ul>
       </div>

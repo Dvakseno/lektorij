@@ -13,6 +13,11 @@ class VideoBackground extends Component {
     play: false
   };
 
+  componentWillUnmount() {
+    const navigation = document.querySelector('.App>ul');
+    navigation.style.opacity = '1';
+  }
+
   playHandler = () => {
     this.setState({ play: !this.state.play });
   };
@@ -51,7 +56,7 @@ class VideoBackground extends Component {
       this.hoverControlHandler(!this.state.play);
       this.showPauseButton();
     }
-    if (this.props.page === 'About' && this.props.page === '/') {
+    if (this.props.page === 'About' || this.props.page === '/') {
       this.videoSize();
       this.resizeWindowHandler();
     }
@@ -59,6 +64,8 @@ class VideoBackground extends Component {
 
   videoSize = () => {
     const video = document.querySelector('.' + classes.VideoBackground + ' video');
+    console.log(video.offsetWidth, video.offsetHeight);
+    console.log(video);
     video.style.width = window.innerWidth + 'px';
     if (video.offsetHeight < window.innerHeight) {
       video.style.width = '';
@@ -84,15 +91,19 @@ class VideoBackground extends Component {
       const video = bgvideo.firstChild;
       const contentwrapper = document.querySelector('.' + this.props.classNameVisible);
 
+      const navigation = document.querySelector('.App>ul');
+
       if (!this.state.play) {
         video.play();
         bgvideo.classList.add(classes.Play);
         contentwrapper.style.opacity = '0';
+        navigation.style.opacity = '0';
         this.hoverControlHandler(this.state.play);
       } else {
         video.pause();
         bgvideo.classList.remove(classes.Play);
         contentwrapper.style.opacity = '1';
+        navigation.style.opacity = '1';
         this.hoverControlHandler(this.state.play);
       }
     }

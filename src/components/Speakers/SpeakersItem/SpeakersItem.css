@@ -40,3 +40,6 @@
 a.speakersItemCompany:hover {
   color: rgb(128, 128, 128);
 }
+.speakersItemPosition {
+  white-space: nowrap;
+}

@@ -5,9 +5,10 @@
 }
 .Title {
   font-family: var(--alergia-black);
-  font-size: 60px;
+  font-size: 71px;
   line-height: 0.88;
-  transform: translateY(-9px);
+  transform: translateY(-11px);
+  white-space: nowrap;
 }
 .Subtitle {
   margin-top: 20px;
@@ -42,4 +43,23 @@
   right: 30px;
   bottom: 25%;
   transform: translateY(50%);
+}
+
+@media (max-height: 420px) {
+  .RegButton {
+    top: 344px;
+    transform: translateY(calc(-100% - 30px));
+  }
+}
+
+@media (max-width: 375px) {
+  .Title {
+    font-size: 63px;
+  }
+}
+
+@media (max-width: 360px) {
+  .Title {
+    font-size: 60px;
+  }
 }

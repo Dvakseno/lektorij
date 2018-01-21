@@ -22,11 +22,7 @@ class App extends Component {
         </BrowserRouter>
       );
     }
-    return (
-      <BrowserRouter>
-        <div className="App">{appContent}</div>
-      </BrowserRouter>
-    );
+    return <BrowserRouter>{appContent}</BrowserRouter>;
   }
 }
 
