@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 
 import Aux from '../../../hoc/Auxiliary';
-import Timepad from '../../Timepad/Timepad';
 import classes from './Subscribe.css';
-// import Backdrop from '../../Backdrop/Backdrop';
 
 class Subscribe extends Component {
   state = {
     showModal: false
-  };
-
-  modalHandler = event => {
-    event.preventDefault();
-    this.setState({ showModal: !this.state.showModal });
   };
 
   render() {
@@ -22,8 +15,6 @@ class Subscribe extends Component {
       : classes.Subscribe;
     return (
       <Aux>
-        <Timepad showModal={this.state.showModal} />
-        {/* <Backdrop showBackdrop={this.state.showModal} onClick={this.test} /> */}
         <div className={subDark}>
           <div>
             <ul>
@@ -47,7 +38,7 @@ class Subscribe extends Component {
                 </a>
               </li>
             </ul>
-            <a href="/" rel="noopener noreferrer" target="_blank" onClick={this.modalHandler}>
+            <a href="/subscribe" rel="noopener noreferrer" target="_blank">
               Подписаться
             </a>
           </div>

@@ -11,9 +11,12 @@ class Lektorij extends Component {
     let delta = e.deltaY;
     if (this.props.location.pathname === '/') {
       if (delta > 0) {
-        setTimeout(() => this.props.history.replace('/about'), 100);
+        setTimeout(() => this.props.history.replace('/about'), 200);
       }
     }
+  };
+  keyHandler = e => {
+    console.log(e.keyCode);
   };
   render() {
     const styles = {
@@ -21,7 +24,7 @@ class Lektorij extends Component {
       height: '100vh'
     };
     return (
-      <div onWheel={this.wheelHandler} style={styles}>
+      <div onWheel={this.wheelHandler} style={styles} onKeyDown={this.keyHandler}>
         <VideoBackground autoplay="true" loop="true" muted="true" source={video} page="Main" />
         <MainTitle />
         <BuyTicketButton />

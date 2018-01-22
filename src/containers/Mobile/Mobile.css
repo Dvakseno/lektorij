@@ -50,6 +50,12 @@
     top: 344px;
     transform: translateY(calc(-100% - 30px));
   }
+  .Social {
+    bottom: auto;
+    left: auto;
+    top: 30px;
+    right: 30px;
+  }
 }
 
 @media (max-width: 375px) {

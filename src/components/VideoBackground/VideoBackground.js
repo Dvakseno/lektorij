@@ -56,7 +56,7 @@ class VideoBackground extends Component {
       this.hoverControlHandler(!this.state.play);
       this.showPauseButton();
     }
-    if (this.props.page === 'About' || this.props.page === '/') {
+    if (this.props.page === 'About' || this.props.page === 'Main') {
       this.videoSize();
       this.resizeWindowHandler();
     }
@@ -64,24 +64,24 @@ class VideoBackground extends Component {
 
   videoSize = () => {
     const video = document.querySelector('.' + classes.VideoBackground + ' video');
-    console.log(video.offsetWidth, video.offsetHeight);
-    console.log(video);
     video.style.width = window.innerWidth + 'px';
     if (video.offsetHeight < window.innerHeight) {
-      video.style.width = '';
+      video.style.width = 'auto';
       video.style.height = window.innerHeight + 'px';
     }
+    console.log(video.offsetWidth, video.offsetHeight);
   };
 
   resizeWindowHandler = () => {
     window.addEventListener('resize', () => {
       const video = document.querySelector('.' + classes.VideoBackground + ' video');
-      video.style.height = '';
+      video.style.height = 'auto';
       video.style.width = window.innerWidth + 'px';
       if (video.offsetHeight < window.innerHeight) {
-        video.style.width = '';
+        video.style.width = 'auto';
         video.style.height = window.innerHeight + 'px';
       }
+      console.log(video.offsetWidth, video.offsetHeight);
     });
   };
 

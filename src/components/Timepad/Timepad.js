@@ -16,11 +16,15 @@ class Timepad extends Component {
     wrapper.appendChild(script);
   }
   render() {
-    let timepadClass = null;
-    timepadClass = this.props.showModal
-      ? [classes.Timepad, classes.TimepadActive].join(' ')
-      : classes.Timepad;
-    return <div className={timepadClass} />;
+    // let timepadClass = null;
+    // timepadClass = this.props.showModal
+    // ? [classes.Timepad, classes.TimepadActive].join(' ')
+    // : classes.Timepad;
+    return (
+      <div className={classes.TimepadWrapper}>
+        <div className={classes.Timepad} />
+      </div>
+    );
   }
 }
 
