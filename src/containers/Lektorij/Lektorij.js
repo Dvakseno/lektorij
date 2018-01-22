@@ -11,7 +11,7 @@ class Lektorij extends Component {
     let delta = e.deltaY;
     if (this.props.location.pathname === '/') {
       if (delta > 0) {
-        this.props.history.replace('/about');
+        setTimeout(() => this.props.history.replace('/about'), 100);
       }
     }
   };

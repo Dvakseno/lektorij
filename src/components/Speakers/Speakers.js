@@ -12,6 +12,7 @@ import img6 from '../../assets/images/speakers/Andronov.jpg';
 import img7 from '../../assets/images/speakers/Motin.jpg';
 import img8 from '../../assets/images/speakers/Bashev.jpg';
 import img9 from '../../assets/images/speakers/Evdokimov.jpg';
+import img10 from '../../assets/images/speakers/Gutsulyak.jpg';
 
 class Speakers extends Component {
   render() {
@@ -27,7 +28,7 @@ class Speakers extends Component {
       },
       {
         id: 2,
-        image: null,
+        image: img10,
         name: 'Юрко Гуцуляк',
         fb: 'https://www.facebook.com/yurko.gutsulyak',
         company: 'Студия графического дизайна Юрка Гуцуляка',

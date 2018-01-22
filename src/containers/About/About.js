@@ -17,9 +17,9 @@ class About extends Component {
     let delta = e.deltaY;
     if (this.props.location.pathname === '/about') {
       if (delta > 0) {
-        this.props.history.replace('/schedule');
+        setTimeout(() => this.props.history.replace('/schedule'), 100);
       } else {
-        this.props.history.replace('/');
+        setTimeout(() => this.props.history.replace('/'), 100);
       }
     }
   };

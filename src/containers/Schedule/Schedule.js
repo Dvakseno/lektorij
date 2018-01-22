@@ -12,7 +12,7 @@ class Schedule extends Component {
     let delta = e.deltaY;
     if (this.props.location.pathname === '/schedule') {
       if (delta < 0 && window.pageYOffset === 0) {
-        this.props.history.replace('/about');
+        setTimeout(() => this.props.history.replace('/about'), 100);
       }
     }
   };
