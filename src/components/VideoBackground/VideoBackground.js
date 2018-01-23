@@ -36,7 +36,7 @@ class VideoBackground extends Component {
     });
   };
 
-  showPauseButton = () => {
+  showPauseButton() {
     const control = document.querySelector('.' + classes.VideoControls);
     const hidePauseButton = () => {
       control.classList.add(classes.VideoBackgroundHidden);
@@ -49,7 +49,7 @@ class VideoBackground extends Component {
         timeout = setTimeout(hidePauseButton, 1000);
       }
     });
-  };
+  }
 
   componentDidMount() {
     if (this.props.page === 'About') {
@@ -62,18 +62,17 @@ class VideoBackground extends Component {
     }
   }
 
-  videoSize = () => {
+  videoSize() {
     const video = document.querySelector('.' + classes.VideoBackground + ' video');
     video.style.width = window.innerWidth + 'px';
     if (video.offsetHeight < window.innerHeight) {
       video.style.width = 'auto';
       video.style.height = window.innerHeight + 'px';
     }
-    console.log(video.offsetWidth, video.offsetHeight);
-  };
+  }
 
-  resizeWindowHandler = () => {
-    window.addEventListener('resize', () => {
+  resizeWindowHandler() {
+    window.addEventListener('resize', function() {
       const video = document.querySelector('.' + classes.VideoBackground + ' video');
       video.style.height = 'auto';
       video.style.width = window.innerWidth + 'px';
@@ -81,9 +80,8 @@ class VideoBackground extends Component {
         video.style.width = 'auto';
         video.style.height = window.innerHeight + 'px';
       }
-      console.log(video.offsetWidth, video.offsetHeight);
     });
-  };
+  }
 
   componentWillUpdate() {
     if (this.props.page === 'About') {

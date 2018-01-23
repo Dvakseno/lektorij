@@ -12,7 +12,7 @@ const mobile = () => {
       <div className={classes.Social}>
         <ul>
           <li>
-            <a href="/" rel="noopener noreferrer" target="_blank">
+            <a href="https://www.facebook.com/lektorij/" rel="noopener noreferrer" target="_blank">
               Facebook
             </a>
           </li>
@@ -22,7 +22,7 @@ const mobile = () => {
             </a>
           </li>
           <li>
-            <a href="/" rel="noopener noreferrer" target="_blank">
+            <a href="https://vk.com/designlektorij" rel="noopener noreferrer" target="_blank">
               вКонтакте
             </a>
           </li>

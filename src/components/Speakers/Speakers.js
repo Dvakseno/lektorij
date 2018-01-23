@@ -13,6 +13,7 @@ import img7 from '../../assets/images/speakers/Motin.jpg';
 import img8 from '../../assets/images/speakers/Bashev.jpg';
 import img9 from '../../assets/images/speakers/Evdokimov.jpg';
 import img10 from '../../assets/images/speakers/Gutsulyak.jpg';
+import img11 from '../../assets/images/speakers/Bendikov.jpg';
 
 class Speakers extends Component {
   render() {
@@ -82,7 +83,7 @@ class Speakers extends Component {
       },
       {
         id: 8,
-        image: null,
+        image: img11,
         name: 'Борис Бендиков',
         fb: 'https://www.facebook.com/boris.bendikov.1',
         company: 'Фотограф',

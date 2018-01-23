@@ -16,6 +16,8 @@
   left: 30px;
   transform: translateY(50%);
   line-height: 40px;
+  box-shadow: none;
+  border-radius: 0;
 }
 .BuyTicketButton:hover {
   background-color: #fff;

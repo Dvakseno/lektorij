@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Aux from '../../hoc/Auxiliary';
 
@@ -14,15 +14,16 @@ class Layout extends Component {
     return (
       <Aux>
         <Navigation />
-        <Route path="/subscribe" component={Timepad} />
         <Switch>
+          <Route path="/subscribe" component={Timepad} />
           <Route path="/" exact component={Lektorij} />
           <Route path="/about" component={About} />
           <Route path="/schedule" component={Schedule} />
+          <Redirect to="/" />
         </Switch>
       </Aux>
     );
   }
 }
 
-export default withRouter(Layout);
+export default Layout;

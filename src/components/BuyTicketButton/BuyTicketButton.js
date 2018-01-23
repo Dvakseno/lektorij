@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import classes from './BuyTicketButton.css';
 
-const buyTicketButton = () => (
-  <a href="/" className={classes.BuyTicketButton}>
-    Купить билет
-  </a>
-);
+class BuyTicketButton extends Component {
+  render() {
+    return (
+      <a href="/" className={classes.BuyTicketButton} onClick={this.props.clicked}>
+        Купить билет
+      </a>
+    );
+  }
+}
 
-export default buyTicketButton;
+export default BuyTicketButton;
