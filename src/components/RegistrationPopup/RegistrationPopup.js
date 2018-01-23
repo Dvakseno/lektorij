@@ -16,9 +16,15 @@ class RegistrationPopup extends Component {
     wrapper.appendChild(script);
   }
 
-  regClicker() {
-    console.log('rg');
-  }
+  // componentWillUpdate() {
+  // const style = document.createElement('style');
+  // style.type = 'text/css';
+  // style.textContent = '.i-page{background-color: rgba(255,255,255, 1)!important; padding: 20px;}';
+  // const iframe = document.getElementsByTagName('iframe');
+  // console.log(iframe);
+  // const iframeWrap = document.querySelector('.' + classes.Registration);
+  // console.log(iframeWrap);
+  // }
 
   render() {
     return (

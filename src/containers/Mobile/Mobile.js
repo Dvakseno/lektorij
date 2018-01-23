@@ -28,7 +28,7 @@ const mobile = () => {
           </li>
         </ul>
       </div>
-      <a href="/" className={classes.RegButton}>
+      <a href="https://lektorij.timepad.ru/event/644648/" className={classes.RegButton}>
         Регистрация
       </a>
     </div>

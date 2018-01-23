@@ -42,7 +42,7 @@ class Subscribe extends Component {
                 </a>
               </li>
             </ul>
-            <a href="/subscribe" rel="noopener noreferrer" target="_blank">
+            <a href="/subscribe.html" rel="noopener noreferrer" target="_blank">
               Подписаться
             </a>
           </div>

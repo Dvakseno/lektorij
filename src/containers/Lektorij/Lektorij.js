@@ -13,6 +13,28 @@ class Lektorij extends Component {
     showPopup: false
   };
 
+  componentDidUpdate() {
+    const iframeWrap = document.querySelector('.App');
+    const style = document.createElement('style');
+    style.type = 'text/css';
+    style.textContent = '.i-page{background-color: rgba(255,255,255, 1)!important; padding: 20px;}';
+    if (this.state.showPopup) {
+      setTimeout(() => {
+        const iframe = iframeWrap.getElementsByTagName('iframe')[0];
+        const iframeHtml = iframe.contentWindow.document.documentElement;
+        const iframeHead = iframeHtml.querySelector('head');
+        iframeHead.appendChild(style);
+      }, 500);
+    }
+
+    if (!this.state.showPopup) {
+      const iframes = document.getElementsByTagName('iframe')[0];
+      if (iframes) {
+        iframes.remove();
+      }
+    }
+  }
+
   wheelHandler = e => {
     let delta = e.deltaY;
     if (this.props.location.pathname === '/') {
