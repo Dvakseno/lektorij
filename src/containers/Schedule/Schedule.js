@@ -6,6 +6,7 @@ import LogoLektorij from '../../components/LogoLektorij/LogoLektorij';
 import classes from './Schedule.css';
 import Speakers from '../../components/Speakers/Speakers';
 import ScheduleContent from '../../components/ScheduleContent/ScheduleContent';
+import Partners from '../../components/Partners/Partners';
 
 class Schedule extends Component {
   wheelHandler = e => {
@@ -33,6 +34,10 @@ class Schedule extends Component {
               {/* <a href="/">Скачать pdf</a> */}
             </div>
             <ScheduleContent />
+            <div className={classes.TitleWrapper}>
+              <h2>Информационные партнёры</h2>
+            </div>
+            <Partners />
           </div>
         </div>
       </Aux>

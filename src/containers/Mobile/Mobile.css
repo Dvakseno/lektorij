@@ -26,6 +26,8 @@
   font-size: 10px;
   text-decoration: none;
   color: #000;
+}
+.Social li:not(:last-child) {
   margin-right: 10px;
 }
 

@@ -1,0 +1,10 @@
+.Partners {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.PartnersItem:not(:last-child) {
+  margin-right: 115px;
+  text-decoration: none;
+  display: block;
+}
