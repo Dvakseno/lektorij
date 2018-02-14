@@ -1,0 +1,8 @@
+.PartnersItem {
+  margin-bottom: 50px;
+}
+.PartnersItem:not(:last-child) {
+  margin-right: 115px;
+  text-decoration: none;
+  display: block;
+}
