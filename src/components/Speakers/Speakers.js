@@ -9,11 +9,12 @@ import img3 from '../../assets/images/speakers/Igoshin.jpg';
 import img4 from '../../assets/images/speakers/Arsenov.jpg';
 import img5 from '../../assets/images/speakers/Prokofiev.jpg';
 import img6 from '../../assets/images/speakers/Andronov.jpg';
-import img7 from '../../assets/images/speakers/Motin.jpg';
+import img7 from '../../assets/images/speakers/Nurullin.jpg';
 import img8 from '../../assets/images/speakers/Bashev.jpg';
 import img9 from '../../assets/images/speakers/Evdokimov.jpg';
 import img10 from '../../assets/images/speakers/Gutsulyak.jpg';
 import img11 from '../../assets/images/speakers/Bendikov.jpg';
+import img13 from '../../assets/images/speakers/Gurov.jpg';
 
 class Speakers extends Component {
   render() {
@@ -95,8 +96,8 @@ class Speakers extends Component {
         image: img6,
         name: 'Сергей Андронов',
         fb: 'https://www.facebook.com/andronovsergey',
-        company: 'Looi Factory',
-        link: 'https://looi.ru/',
+        company: 'Binary District',
+        link: 'https://binarydistrict.com/',
         position: 'Дизайн-директор'
       },
       {
@@ -114,26 +115,26 @@ class Speakers extends Component {
         name: 'Спикер уточняется',
         fb: null,
         company: null,
-        link: '/',
+        link: null,
         position: null
       },
       {
         id: 12,
-        image: null,
-        name: 'Спикер уточняется',
-        fb: null,
-        company: null,
-        link: '/',
-        position: null
+        image: img13,
+        name: 'Сергей Гуров',
+        fb: 'https://www.behance.net/milkwork',
+        company: 'Redmadrobot',
+        link: 'https://www.redmadrobot.ru/',
+        position: 'Арт-директор'
       },
       {
         id: 13,
         image: img7,
-        name: 'Александр Мотин',
-        fb: 'https://www.facebook.com/aleksandr.a.motin?ref=br_rs',
-        company: 'Braind',
-        link: 'http://braind.agency/',
-        position: 'Креативный директор'
+        name: 'Филипп Нуруллин',
+        fb: 'https://www.facebook.com/profile.php?id=100010480024107',
+        company: 'patat',
+        link: 'http://www.patat.me/',
+        position: 'Арт-директор'
       }
     ];
     const list = speakersList.map(speaker => {

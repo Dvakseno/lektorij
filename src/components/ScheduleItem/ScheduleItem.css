@@ -1,0 +1,14 @@
+.ScheduleItem {
+  display: flex;
+  margin-bottom: 50px;
+  width: 50%;
+  line-height: 1.38;
+}
+.ScheduleItemRight {
+  margin-left: 50%;
+}
+
+.Time {
+  width: 113px;
+  flex-shrink: 0;
+}

@@ -2,6 +2,7 @@
   width: 866px;
   margin: 0 auto;
   padding-top: 100px;
+  font-family: var(--alergia);
 }
 .TitleWrapper {
   position: relative;
@@ -22,4 +23,25 @@
 }
 .TitleWrapper a:hover {
   color: #000;
+}
+
+.ScheduleItemContent {
+  display: flex;
+}
+.ScheduleItemTitle {
+  font-family: var(--alergia-black);
+  margin-bottom: 10px;
+}
+.ScheduleItemTitleSlim {
+  font-family: var(--alergia);
+  margin-bottom: 0;
+}
+.ScheduleItemTitleHall {
+  margin-bottom: 0;
+}
+.ScheduleItemSubTitle {
+  font-family: var(--alergia-black);
+}
+.ScheduleItemSpeakers {
+  white-space: nowrap;
 }

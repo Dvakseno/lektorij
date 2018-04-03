@@ -1,0 +1,22 @@
+.Tabs {
+  margin-bottom: 40px;
+}
+
+.TitleWrapper {
+  position: absolute;
+  left: 224px;
+  top: 0;
+  transform: translateY(-5px);
+}
+.Title {
+  color: #808080;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: var(--alergia-black);
+  display: inline-block;
+  margin-right: 20px;
+}
+.TitleActive,
+.Title:hover {
+  color: #000;
+}
