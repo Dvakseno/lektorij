@@ -36,7 +36,7 @@ class Schedule extends Component {
             <Speakers />
             <div className={classes.TitleWrapper}>
               <h2>Программа</h2>
-              <a href={pdf} target="_blank">
+              <a href={pdf} target="_blank" download>
                 Скачать pdf
               </a>
 
@@ -104,7 +104,9 @@ class Schedule extends Component {
                   <div className={classes.ScheduleItemContent}>
                     <ScheduleItem time="13:00-16:00">
                       <div className={classes.ScheduleItemTitle}>Интенсив</div>
-                      <div className={classes.ScheduleItemSubTitle}>Тема уточняется</div>
+                      <div className={classes.ScheduleItemSubTitle}>
+                        Создание персонального бренда
+                      </div>
                       <div className={classes.ScheduleItemSpeakers}>Денис Башев, Юрко Гуцуляк</div>
                     </ScheduleItem>
                     <ScheduleItem>
@@ -185,18 +187,27 @@ class Schedule extends Component {
                       Открытие
                     </div>
                   </ScheduleItem>
-                  <ScheduleItem time="11:00-12:00">
-                    <div className={classes.ScheduleItemTitle}>Дискуссия</div>
-                    <div className={classes.ScheduleItemSubTitle}>Тема уточняется</div>
-                    <div className={classes.ScheduleItemSpeakers}>Денис Башев, Юрко Гуцуляк</div>
-                  </ScheduleItem>
                   <div className={classes.ScheduleItemContent}>
-                    <ScheduleItem time="12:00-15:00">
+                    <ScheduleItem time="11:00-12:30">
+                      <div className={classes.ScheduleItemTitle}>Дискуссия</div>
+                      {/* <div className={classes.ScheduleItemSubTitle}>Тема уточняется</div> */}
+                      <div className={classes.ScheduleItemSpeakers}>Денис Башев, Юрко Гуцуляк</div>
+                    </ScheduleItem>
+                    <ScheduleItem time="11:00-13:00">
+                      <div className={classes.ScheduleItemTitle}>Мастер-класс</div>
+                      <div className={classes.ScheduleItemSubTitle}>
+                        Основы менеджмента<br />для дизайнеров
+                      </div>
+                      <div className={classes.ScheduleItemSpeakers}>Сергей Прокофьев</div>
+                    </ScheduleItem>
+                  </div>
+                  <div className={classes.ScheduleItemContent}>
+                    <ScheduleItem time="12:30-15:30">
                       <div className={classes.ScheduleItemTitle}>Интенсив</div>
                       <div className={classes.ScheduleItemSubTitle}>Практика вместо слов</div>
                       <div className={classes.ScheduleItemSpeakers}>Гоша Евдокимов</div>
                     </ScheduleItem>
-                    <ScheduleItem time="12:00-12:30">
+                    <ScheduleItem time="13:00-13:30">
                       <div className={classes.ScheduleItemTitle}>Лекция</div>
                       <div className={classes.ScheduleItemSubTitle}>
                         Сложность проекта.<br />От процессов до импровизации
@@ -204,14 +215,7 @@ class Schedule extends Component {
                       <div className={classes.ScheduleItemSpeakers}>Сергей Гуров</div>
                     </ScheduleItem>
                   </div>
-                  <ScheduleItem time="12:30-14:00" right>
-                    <div className={classes.ScheduleItemTitle}>Мастер-класс</div>
-                    <div className={classes.ScheduleItemSubTitle}>
-                      Основы менеджмента<br />для дизайнеров
-                    </div>
-                    <div className={classes.ScheduleItemSpeakers}>Сергей Прокофьев</div>
-                  </ScheduleItem>
-                  <ScheduleItem time="14:00-16:00" right>
+                  <ScheduleItem time="13:30-15:30" right>
                     <div className={classes.ScheduleItemTitle}>Интенсив</div>
                     <div className={classes.ScheduleItemSubTitle}>
                       Генерация идей в продуктовом дизайне
@@ -219,7 +223,7 @@ class Schedule extends Component {
                     <div className={classes.ScheduleItemSpeakers}>Дмитрий Игошин</div>
                   </ScheduleItem>
                   <div className={classes.ScheduleItemContent}>
-                    <ScheduleItem time="17:00-19:00">
+                    <ScheduleItem time="16:30-18:30">
                       <div className={classes.ScheduleItemTitle}>Лекция-беседа</div>
                       <div className={classes.ScheduleItemSubTitle}>
                         Творчество и хождение строем<br />в коммерческой фотографии
@@ -232,7 +236,7 @@ class Schedule extends Component {
                       <div className={classes.ScheduleItemSpeakers}>Филипп Нуруллин</div>
                     </ScheduleItem>
                   </div>
-                  <ScheduleItem time="19:00">
+                  <ScheduleItem time="18:30">
                     <div
                       className={[classes.ScheduleItemTitle, classes.ScheduleItemTitleSlim].join(
                         ' '

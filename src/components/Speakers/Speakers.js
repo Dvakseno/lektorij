@@ -69,7 +69,7 @@ class Speakers extends Component {
         image: img8,
         name: 'Денис Башев',
         fb: 'https://www.facebook.com/didierbashev',
-        company: 'Dilettante',
+        company: 'DILETTANT',
         link: 'http://dilettant.co/',
         position: 'Графический дизайнер'
       },
@@ -105,16 +105,7 @@ class Speakers extends Component {
         image: img9,
         name: 'Гоша Евдокимов',
         fb: 'https://www.facebook.com/EvdokimovGosha',
-        company: null,
-        link: null,
-        position: 'Независимый спикер'
-      },
-      {
-        id: 11,
-        image: null,
-        name: 'Спикер уточняется',
-        fb: null,
-        company: null,
+        company: 'Арт-директор Независимый спикер',
         link: null,
         position: null
       },
